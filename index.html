@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Times</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <a href="#" onclick="reload()" class="company-logo">
+                    <img src="./img/logo1.png" alt="company logo">
+                </a>
+
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li class="hover-link nav-item" onclick="reload()">Home</li>
+                        <li class="hover-link nav-item" id="Trending" onclick="onNavItemClick('trending')">Trending</li>
+                        <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('cricket')">Cricket</li>
+                        <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('Science')">Science</li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        
+                    </ul>
+                </div>
+                <div class="search-bar flex">
+                    <input id="search-text" type="text" class="news-input" placeholder="Example- Cars ">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 16/09/2025</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div> 
+
+                
+    </template>
+
+<hr>
+
+    <div class="footer-basic">
+    <footer>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Follow us on our Social Media</a></li>
+        </ul>
+        <p class="copyright">News Times © 2023</p>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
